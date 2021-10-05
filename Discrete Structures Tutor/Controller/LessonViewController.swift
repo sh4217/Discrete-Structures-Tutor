@@ -2,11 +2,12 @@ import UIKit
 
 class LessonViewController: UIViewController {
 
-    let questions = [
+    let statements = [
         "What is a proposition?",
         "A proposition is a sentence that declares a fact that is either true or false.",
     ]
     
+    var statementNumber = 0
     var questionNumber = 0
     
     @IBOutlet weak var textBox: UILabel!
@@ -15,18 +16,18 @@ class LessonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        textBox.text = questions[questionNumber]
+        textBox.text = statements[statementNumber]
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
-        questionNumber += 1
-        if questionNumber < questions.count {
-            updateLabel(questionNumber: questionNumber)
+        statementNumber += 1
+        if statementNumber < statements.count {
+            updateLabel(statementNumber: statementNumber)
         }
     }
     
-    func updateLabel(questionNumber: Int) {
-        textBox.text = questions[questionNumber]
+    func updateLabel(statementNumber: Int) {
+        textBox.text = statements[statementNumber]
     }
 }
 
