@@ -9,8 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var learningButton: UIButton!
+    @IBOutlet weak var practiceButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
