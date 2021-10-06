@@ -7,6 +7,8 @@ class LessonViewController: UIViewController {
         "A proposition is a sentence that declares a fact that is either true or false.",
     ]
     
+    let questionPositions = [2]
+    
     var statementNumber = 0
     var questionNumber = 0
     
@@ -23,6 +25,9 @@ class LessonViewController: UIViewController {
         statementNumber += 1
         if statementNumber < statements.count {
             updateLabel(statementNumber: statementNumber)
+        }
+        if questionPositions.contains(statementNumber) {
+            performSegue(withIdentifier: "lessonToQuestion", sender: nil)
         }
     }
     

@@ -6,9 +6,12 @@ class QuestionViewController: UIViewController {
         "Is the following sentence a proposition?\n\nSan Francisco is the capital of California."
     ]
     
-    let answers = [
+    let answers = [true]
+    var correctFlag = false
+    
+    let explanations = [
         """
-        That statement is a proposition, because it is declaring a sentence with a true value.
+        Yes. That statement is a proposition, because it is declaring a sentence with a truth value.
         The truth value is false, because the capital of California is Sacramento, not San Francisco.
         """,
     ]
@@ -16,12 +19,44 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var questionBox: UILabel!
     @IBOutlet weak var answerBox: UILabel!
     
+    @IBOutlet weak var yesButton: UIButton!
+    @IBOutlet weak var noButton: UIButton!
+    @IBOutlet weak var returnButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        questionBox.text = questions[0]
-        answerBox.text = answers[0]
         
+        correctFlag = false
+        questionBox.text = questions[0]
     }
-
+    
+    @IBAction func yesButtonPressed(_ sender: Any) {
+        if answers[0] {
+            correctFlag = true
+            answerBox.text = explanations[0]
+        }
+        else {
+            correctFlag = false
+            answerBox.text = "Incorrect. Try again."
+        }
+    }
+    
+    @IBAction func noButtonPressed(_ sender: Any) {
+        if !answers[0] {
+            correctFlag = true
+            answerBox.text = explanations[0]
+        }
+        else {
+            correctFlag = false
+            answerBox.text = "Incorrect. Try again."
+        }
+    }
+    
+    @IBAction func returnButtonPressed(_ sender: Any) {
+        if correctFlag {
+            performSegue(withIdentifier: "questionToLesson", sender: nil)
+        }
+    }
+    
+    
 }
