@@ -5,6 +5,7 @@ class LessonViewController: UIViewController {
     let statements = [
         "What is a proposition?",
         "A proposition is a sentence that declares a fact that is either true or false.",
+        "Next statement"
     ]
     
     let questionPositions = [2]
@@ -17,7 +18,7 @@ class LessonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         textBox.text = statements[statementNumber]
     }
     
@@ -33,6 +34,13 @@ class LessonViewController: UIViewController {
     
     func updateLabel(statementNumber: Int) {
         textBox.text = statements[statementNumber]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let target = segue.destination as? QuestionViewController {
+            target.statementNumber = statementNumber
+            target.questionNumber = questionNumber
+        }
     }
 }
 

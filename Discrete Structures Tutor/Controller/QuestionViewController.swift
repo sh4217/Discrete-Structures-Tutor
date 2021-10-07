@@ -9,6 +9,9 @@ class QuestionViewController: UIViewController {
     let answers = [true]
     var correctFlag = false
     
+    var statementNumber = 0
+    var questionNumber = 0
+    
     let explanations = [
         """
         Yes. That statement is a proposition, because it is declaring a sentence with a truth value.
@@ -55,6 +58,13 @@ class QuestionViewController: UIViewController {
     @IBAction func returnButtonPressed(_ sender: Any) {
         if correctFlag {
             performSegue(withIdentifier: "questionToLesson", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let target = segue.destination as? LessonViewController {
+            target.statementNumber = statementNumber
+            target.questionNumber = questionNumber
         }
     }
     
