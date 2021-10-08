@@ -347,7 +347,7 @@
                                     <constraint firstAttribute="height" constant="50" id="Oq9-J3-n94"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Return to lecture"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue"/>
                                 <connections>
                                     <action selector="returnButtonPressed:" destination="WfL-ia-Zq4" eventType="touchUpInside" id="0Ej-9X-lR8"/>
                                 </connections>
