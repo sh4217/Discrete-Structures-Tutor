@@ -4,17 +4,18 @@ class QuestionViewController: UIViewController {
 
     let questions = [
         "Is the following sentence a proposition?\n\nSan Francisco is the capital of California.",
-        "Is the following sentence a proposition?\n\nAre pelicans birds?"
+        "Is the following sentence a proposition?\n\nAre pelicans birds?",
+        "Let p represent the statement \"The car is red.\"\n\nIs the following an accurate negation of p?\n\n\"The car is blue.\""
 
     ]
     
-    let answers = [true, false]
+    let answers = [true, false, false]
     var correctFlag = false
     
     var statementNumber = 0
     var questionNumber = 0
     
-    let statementPosition = [20]
+    let statementPosition = [2, 3]
     
     let explanations = [
         """
@@ -22,6 +23,7 @@ class QuestionViewController: UIViewController {
         The truth value is false, because the capital of California is Sacramento, not San Francisco.
         """,
         "No. It is a question, not a declarative statement, so it cannot be a proposition.",
+        "No. ~p is simply \"The car is not red.\""
     ]
     
     @IBOutlet weak var questionBox: UILabel!
@@ -39,7 +41,7 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func yesButtonPressed(_ sender: Any) {
-        if answers[0] {
+        if answers[questionNumber] {
             correctFlag = true
             answerBox.text = explanations[questionNumber]
         }
@@ -50,9 +52,9 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func noButtonPressed(_ sender: Any) {
-        if !answers[0] {
+        if !answers[questionNumber] {
             correctFlag = true
-            answerBox.text = explanations[0]
+            answerBox.text = explanations[questionNumber]
         }
         else {
             correctFlag = false
@@ -63,7 +65,9 @@ class QuestionViewController: UIViewController {
     @IBAction func returnButtonPressed(_ sender: Any) {
         if correctFlag {
             questionNumber += 1
+            print("question number: \(questionNumber)")
             if statementPosition.contains(questionNumber) {
+                print("transition from question to lesson")
                 performSegue(withIdentifier: "questionToLesson", sender: nil)
             } else if questionNumber < questions.count {
                 updateLabel(position: questionNumber)

@@ -5,10 +5,13 @@ class LessonViewController: UIViewController {
     let statements = [
         "What is a proposition?",
         "A proposition is a sentence that declares a fact that is either true or false.",
-        "Next statement"
+        "We can assign propositions to variables that allow us to perform operations on them and to connect them with other propositions.",
+        "For example, let us represent the proposition “it is raining today” with the variable p.",
+        "The logical operator “Not,” or ¬, represents the inverse of the proposition it is placed before.\n\n~p is read as \"not p.\"",
+        "Lecture continues"
     ]
     
-    let questionPositions = [2]
+    let questionPositions = [2, 5]
     
     var statementNumber = 0
     var questionNumber = 0
@@ -24,10 +27,12 @@ class LessonViewController: UIViewController {
     
     @IBAction func nextButtonPressed(_ sender: Any) {
         statementNumber += 1
+        print("statement number: \(statementNumber)")
         if statementNumber < statements.count {
             updateLabel(statementNumber: statementNumber)
         }
         if questionPositions.contains(statementNumber) {
+            print("transition from lesson to question")
             performSegue(withIdentifier: "lessonToQuestion", sender: nil)
         }
     }
