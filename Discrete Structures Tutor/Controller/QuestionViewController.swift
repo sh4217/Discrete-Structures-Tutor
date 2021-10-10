@@ -65,9 +65,9 @@ class QuestionViewController: UIViewController {
     @IBAction func returnButtonPressed(_ sender: Any) {
         if correctFlag {
             questionNumber += 1
-            print("question number: \(questionNumber)")
+            // print("question number: \(questionNumber)")
             if statementPosition.contains(questionNumber) {
-                print("transition from question to lesson")
+                // print("transition from question to lesson")
                 performSegue(withIdentifier: "questionToLesson", sender: nil)
             } else if questionNumber < questions.count {
                 updateLabel(position: questionNumber)

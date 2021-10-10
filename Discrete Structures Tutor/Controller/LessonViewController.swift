@@ -27,12 +27,12 @@ class LessonViewController: UIViewController {
     
     @IBAction func nextButtonPressed(_ sender: Any) {
         statementNumber += 1
-        print("statement number: \(statementNumber)")
+        // print("statement number: \(statementNumber)")
         if statementNumber < statements.count {
             updateLabel(statementNumber: statementNumber)
         }
         if questionPositions.contains(statementNumber) {
-            print("transition from lesson to question")
+            // print("transition from lesson to question")
             performSegue(withIdentifier: "lessonToQuestion", sender: nil)
         }
     }
