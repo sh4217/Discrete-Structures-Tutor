@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE22737E270CCF64009A8059 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE22737D270CCF64009A8059 /* QuestionViewController.swift */; };
-		FE3542B227134AAE00E1043C /* ExamSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3542B127134AAE00E1043C /* ExamSelectionVC.swift */; };
-		FE3542B427134D1200E1043C /* MidtermVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3542B327134D1200E1043C /* MidtermVC.swift */; };
-		FE3542B6271351C000E1043C /* MidtermAnswerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3542B5271351C000E1043C /* MidtermAnswerVC.swift */; };
+		FE4ACC312720EDC5009953B7 /* InformationDictionary1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4ACC302720EDC5009953B7 /* InformationDictionary1.swift */; };
 		FEAD79EF270A606F000C4F0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD79EE270A606F000C4F0F /* AppDelegate.swift */; };
 		FEAD79F1270A606F000C4F0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD79F0270A606F000C4F0F /* SceneDelegate.swift */; };
 		FEAD79F3270A606F000C4F0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD79F2270A606F000C4F0F /* ViewController.swift */; };
@@ -23,10 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE22737D270CCF64009A8059 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
-		FE3542B127134AAE00E1043C /* ExamSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamSelectionVC.swift; sourceTree = "<group>"; };
-		FE3542B327134D1200E1043C /* MidtermVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidtermVC.swift; sourceTree = "<group>"; };
-		FE3542B5271351C000E1043C /* MidtermAnswerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidtermAnswerVC.swift; sourceTree = "<group>"; };
+		FE4ACC302720EDC5009953B7 /* InformationDictionary1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDictionary1.swift; sourceTree = "<group>"; };
 		FEAD79EB270A606F000C4F0F /* Discrete Structures Tutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discrete Structures Tutor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAD79EE270A606F000C4F0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEAD79F0270A606F000C4F0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE4ACC2F2720EDB4009953B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE4ACC302720EDC5009953B7 /* InformationDictionary1.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FEAD79E2270A606F000C4F0F = {
 			isa = PBXGroup;
 			children = (
@@ -70,9 +72,9 @@
 		FEAD79ED270A606F000C4F0F /* Discrete Structures Tutor */ = {
 			isa = PBXGroup;
 			children = (
+				FE4ACC2F2720EDB4009953B7 /* Model */,
 				FEAD79EE270A606F000C4F0F /* AppDelegate.swift */,
 				FEAD79F0270A606F000C4F0F /* SceneDelegate.swift */,
-				FEFC7284270A6E7700504A6F /* Model */,
 				FEFC7283270A6E6D00504A6F /* View */,
 				FEAD7A05270A6251000C4F0F /* Controller */,
 				FEAD79FA270A6070000C4F0F /* Assets.xcassets */,
@@ -89,10 +91,6 @@
 				FEAD79F2270A606F000C4F0F /* ViewController.swift */,
 				FEAD7A06270A6268000C4F0F /* TopicsViewController.swift */,
 				FEC0E48B270A784C00BDB2AE /* LessonViewController.swift */,
-				FE22737D270CCF64009A8059 /* QuestionViewController.swift */,
-				FE3542B127134AAE00E1043C /* ExamSelectionVC.swift */,
-				FE3542B327134D1200E1043C /* MidtermVC.swift */,
-				FE3542B5271351C000E1043C /* MidtermAnswerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,13 +101,6 @@
 				FEAD79F4270A606F000C4F0F /* Main.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		FEFC7284270A6E7700504A6F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,13 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4ACC312720EDC5009953B7 /* InformationDictionary1.swift in Sources */,
 				FEAD79F3270A606F000C4F0F /* ViewController.swift in Sources */,
 				FEAD79F9270A606F000C4F0F /* Discrete_Structures_Tutor.xcdatamodeld in Sources */,
-				FE3542B227134AAE00E1043C /* ExamSelectionVC.swift in Sources */,
-				FE3542B6271351C000E1043C /* MidtermAnswerVC.swift in Sources */,
-				FE22737E270CCF64009A8059 /* QuestionViewController.swift in Sources */,
 				FEAD79EF270A606F000C4F0F /* AppDelegate.swift in Sources */,
-				FE3542B427134D1200E1043C /* MidtermVC.swift in Sources */,
 				FEAD7A07270A6268000C4F0F /* TopicsViewController.swift in Sources */,
 				FEC0E48C270A784C00BDB2AE /* LessonViewController.swift in Sources */,
 				FEAD79F1270A606F000C4F0F /* SceneDelegate.swift in Sources */,

@@ -13,4 +13,7 @@ class TopicsViewController: UIViewController {
 
     }
 
+    @IBAction func backButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "topicsToView", sender: nil)
+    }
 }
