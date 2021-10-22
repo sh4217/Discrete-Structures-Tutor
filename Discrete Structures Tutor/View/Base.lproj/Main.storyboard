@@ -233,7 +233,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4V-DS-rd5">
                                 <rect key="frame" x="50" y="94" width="314" height="618"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -249,7 +249,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcq-L7-DuQ"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bcq-L7-DuQ" firstAttribute="trailing" secondItem="i4V-DS-rd5" secondAttribute="trailing" constant="50" id="7S3-2t-vOT"/>
                             <constraint firstItem="i4V-DS-rd5" firstAttribute="top" secondItem="Bcq-L7-DuQ" secondAttribute="top" constant="50" id="CVb-Ax-M6e"/>
@@ -265,22 +265,83 @@
                         <outlet property="nextButton" destination="QYA-de-ZxP" id="2eW-tA-Ec2"/>
                         <outlet property="textBox" destination="i4V-DS-rd5" id="iVp-YV-Arq"/>
                         <segue destination="daG-hJ-Twm" kind="presentation" identifier="lessonToTopics" modalPresentationStyle="fullScreen" id="ryX-rJ-1Rz"/>
+                        <segue destination="BdI-K8-JmZ" kind="presentation" identifier="lessonNeedsImage" modalPresentationStyle="fullScreen" id="yxv-ab-fVH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acW-4t-Sbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480" y="98"/>
+            <point key="canvasLocation" x="2516" y="100"/>
+        </scene>
+        <!--Lesson With ImageVC-->
+        <scene sceneID="Krz-jj-WKp">
+            <objects>
+                <viewController id="BdI-K8-JmZ" customClass="LessonWithImageVC" customModule="Discrete_Structures_Tutor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ykp-HH-KiP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zU-1Z-rZl">
+                                <rect key="frame" x="50" y="94" width="314" height="200"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Bvr-g9-3uU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSd-j2-lNq">
+                                <rect key="frame" x="100" y="787" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BAI-Nb-HwR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue"/>
+                                <connections>
+                                    <action selector="continueButtonPressed:" destination="BdI-K8-JmZ" eventType="touchUpInside" id="1U2-BX-sh1"/>
+                                    <action selector="nextButtonPressed:" destination="BdI-K8-JmZ" eventType="touchUpInside" id="uRi-7a-b5L"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5IE-YZ-MK8">
+                                <rect key="frame" x="87" y="447" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="g4l-hK-o87"/>
+                                    <constraint firstAttribute="height" constant="240" id="geq-fm-DOz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WEK-5c-T42"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WEK-5c-T42" firstAttribute="bottom" secondItem="vSd-j2-lNq" secondAttribute="bottom" constant="25" id="6pD-iU-lGi"/>
+                            <constraint firstItem="WEK-5c-T42" firstAttribute="trailing" secondItem="8zU-1Z-rZl" secondAttribute="trailing" constant="50" id="6w7-f3-dzS"/>
+                            <constraint firstItem="vSd-j2-lNq" firstAttribute="top" secondItem="5IE-YZ-MK8" secondAttribute="bottom" constant="100" id="BpS-fN-kpx"/>
+                            <constraint firstItem="vSd-j2-lNq" firstAttribute="leading" secondItem="WEK-5c-T42" secondAttribute="leading" constant="100" id="PlN-lO-N5K"/>
+                            <constraint firstItem="WEK-5c-T42" firstAttribute="trailing" secondItem="vSd-j2-lNq" secondAttribute="trailing" constant="100" id="Uy2-0Y-Ncb"/>
+                            <constraint firstItem="5IE-YZ-MK8" firstAttribute="centerX" secondItem="Ykp-HH-KiP" secondAttribute="centerX" id="Wh3-GJ-vhD"/>
+                            <constraint firstItem="8zU-1Z-rZl" firstAttribute="leading" secondItem="WEK-5c-T42" secondAttribute="leading" constant="50" id="gFC-Fc-bbo"/>
+                            <constraint firstItem="8zU-1Z-rZl" firstAttribute="top" secondItem="WEK-5c-T42" secondAttribute="top" constant="50" id="qUb-QF-S2D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="5IE-YZ-MK8" id="pcF-Ju-jZI"/>
+                        <outlet property="lessonLabel" destination="8zU-1Z-rZl" id="dDP-yT-r95"/>
+                        <segue destination="nDc-gv-jwM" kind="presentation" identifier="noImageNeeded" modalPresentationStyle="fullScreen" id="nBi-Pz-I35"/>
+                        <segue destination="daG-hJ-Twm" kind="presentation" identifier="lessonImageToTopics" modalPresentationStyle="fullScreen" id="Glr-12-XcI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhy-xb-gnS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3341" y="98"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4BU-cx-zCK"/>
+        <segue reference="QN5-UJ-ueQ"/>
+        <segue reference="Glr-12-XcI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
