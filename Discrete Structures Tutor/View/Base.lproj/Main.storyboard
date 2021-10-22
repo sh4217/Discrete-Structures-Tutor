@@ -298,8 +298,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Continue"/>
                                 <connections>
-                                    <action selector="continueButtonPressed:" destination="BdI-K8-JmZ" eventType="touchUpInside" id="1U2-BX-sh1"/>
-                                    <action selector="nextButtonPressed:" destination="BdI-K8-JmZ" eventType="touchUpInside" id="uRi-7a-b5L"/>
+                                    <action selector="nextButtonPressed:" destination="BdI-K8-JmZ" eventType="touchUpInside" id="hmM-tl-nFD"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5IE-YZ-MK8">
@@ -336,7 +335,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QN5-UJ-ueQ"/>
+        <segue reference="nBi-Pz-I35"/>
         <segue reference="Glr-12-XcI"/>
     </inferredMetricsTieBreakers>
     <resources>
