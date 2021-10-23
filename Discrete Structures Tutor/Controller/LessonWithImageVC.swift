@@ -21,7 +21,7 @@ class LessonWithImageVC: UIViewController {
     
     @IBAction func nextButtonPressed(_ sender: Any) {
         slideNumber += 1
-
+        
         if slideNumber < infoDict.lecture.count {
             if infoDict.image[slideNumber] != nil {
                 updateLabel(slideNumber: slideNumber)
