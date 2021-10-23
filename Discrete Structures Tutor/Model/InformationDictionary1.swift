@@ -11,8 +11,11 @@ class InformationDictionary1 {
         "Truth tables allow us to compare the truth value of propositions, often in conjunction with locial operators and connectors.",
         "The truth table below compares the values of p to ~p.",
         "The connector \"And,\" also known as a conjunction, is represented as ^.\n\nThe conjunction of two propositions, often represented as p^q, is only true when both p and q are true.\n\nEx: p = \"It is raining today.\" q = \"The ground is wet.\" p^q = \"It is raining today and the ground is wet.\"",
-        "The connector \"Or,\" also known as a disjunction, is represented as ∨. The disjunction of two propositions is true if either of them or both of them are true.\n\nEx: p = \"I own a house.\" \nq = \"I rent an apartment.\" \np∨q = \"I own a house or I own an apartment.\""
-        
+        "Truth table: AND operator",
+        "The connector \"Or,\" also known as a disjunction, is represented as ∨. The disjunction of two propositions is true if either of them or both of them are true.\n\nEx: p = \"I own a house.\" \nq = \"I rent an apartment.\" \np∨q = \"I own a house or I own an apartment.\"",
+        "Truth table: OR operator",
+        "Exclusive or, also known as exclusive disjunction, is represented as ⊕. The exclusive disjunction of two propositions if one of them is true and the other is false.",
+        "Truth table: XOR operator",
     ]
     
     let image: [UIImage?] = [
@@ -25,6 +28,10 @@ class InformationDictionary1 {
         nil,
         UIImage(named: "truthtable1"),
         nil,
-        nil
+        UIImage(named: "truthtable2"),
+        nil,
+        UIImage(named: "truthtable3"),
+        nil,
+        UIImage(named: "truthtable4"),
     ]
 }
