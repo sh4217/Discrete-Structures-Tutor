@@ -41,7 +41,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Learning"/>
                                 <connections>
-                                    <segue destination="daG-hJ-Twm" kind="presentation" modalPresentationStyle="fullScreen" id="4BU-cx-zCK"/>
+                                    <segue destination="daG-hJ-Twm" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="4BU-cx-zCK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRQ-wf-tWX">
@@ -120,7 +120,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Propositional Logic"/>
                                 <connections>
-                                    <segue destination="nDc-gv-jwM" kind="presentation" modalPresentationStyle="fullScreen" id="QN5-UJ-ueQ"/>
+                                    <segue destination="nDc-gv-jwM" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="QN5-UJ-ueQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2I-n2-cHv">
@@ -216,7 +216,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="MhU-WG-XVT" id="Zu9-z9-2hD"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="topicsToView" modalPresentationStyle="fullScreen" id="DoC-yg-YZ7"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="topicsToView" animates="NO" modalPresentationStyle="fullScreen" id="DoC-yg-YZ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tmh-cP-hqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -264,8 +264,8 @@
                     <connections>
                         <outlet property="nextButton" destination="QYA-de-ZxP" id="2eW-tA-Ec2"/>
                         <outlet property="textBox" destination="i4V-DS-rd5" id="iVp-YV-Arq"/>
-                        <segue destination="daG-hJ-Twm" kind="presentation" identifier="lessonToTopics" modalPresentationStyle="fullScreen" id="ryX-rJ-1Rz"/>
-                        <segue destination="BdI-K8-JmZ" kind="presentation" identifier="lessonNeedsImage" modalPresentationStyle="fullScreen" id="yxv-ab-fVH"/>
+                        <segue destination="daG-hJ-Twm" kind="presentation" identifier="lessonToTopics" animates="NO" modalPresentationStyle="fullScreen" id="ryX-rJ-1Rz"/>
+                        <segue destination="BdI-K8-JmZ" kind="presentation" identifier="lessonNeedsImage" animates="NO" modalPresentationStyle="fullScreen" id="yxv-ab-fVH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acW-4t-Sbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -325,7 +325,7 @@
                     <connections>
                         <outlet property="imageView" destination="5IE-YZ-MK8" id="pcF-Ju-jZI"/>
                         <outlet property="lessonLabel" destination="8zU-1Z-rZl" id="dDP-yT-r95"/>
-                        <segue destination="nDc-gv-jwM" kind="presentation" identifier="noImageNeeded" modalPresentationStyle="fullScreen" id="nBi-Pz-I35"/>
+                        <segue destination="nDc-gv-jwM" kind="presentation" identifier="noImageNeeded" animates="NO" modalPresentationStyle="fullScreen" id="nBi-Pz-I35"/>
                         <segue destination="daG-hJ-Twm" kind="presentation" identifier="lessonImageToTopics" modalPresentationStyle="fullScreen" id="Glr-12-XcI"/>
                     </connections>
                 </viewController>
@@ -335,8 +335,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nBi-Pz-I35"/>
-        <segue reference="Glr-12-XcI"/>
+        <segue reference="QN5-UJ-ueQ"/>
+        <segue reference="4BU-cx-zCK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">

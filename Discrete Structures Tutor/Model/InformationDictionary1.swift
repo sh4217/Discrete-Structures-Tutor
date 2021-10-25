@@ -16,6 +16,16 @@ class InformationDictionary1 {
         "Truth table: OR operator",
         "Exclusive or, also known as exclusive disjunction, is represented as ⊕. The exclusive disjunction of two propositions if one of them is true and the other is false.",
         "Truth table: XOR operator",
+        "Composite statements can be formed by combining propositions and operators to create new statements.",
+        "Compound statement truth table: (~p)∨(~q)",
+        "The statement \"if p, then q\" is called an implication, and is represented \"p→q.\" It means that if p is true, then q is guaranteed to be true as well.\n\nEx: p = \"My head feels hot.\"\nq = \"I will take my temperature.\"\np→q = \"If my head feels hot, then I will take my temperature.\"",
+        "Truth table: implication",
+        "The last two rows of the previous table may have been confusing. Why is p→q true if p is false but q is true?\n\nJust because p implies q does not mean q depends on p. For example, just because I always take my temperature when my head feels hot, does not mean that taking my temperature is automatically a result of my head feeling hot. I took my temperature the other day as part of a COVID screening for a doctor's appointment even though my head felt normal.",
+        "Similarly, why is p→q true if p and q are both false? If the hypothesis is false, then it is irrelevant if the conclusion is false too. Is the statement \"If my head feels hot, then I will take my temperature\" disproven if my head feels normal and I don't do anything? No.",
+        "The only scenario capable of disproving the implication p→q is if p is true but q remains false.",
+        "If we take the implication p→q, then the converse of that implication is q→p.\n\nIf p→q is a valid implication, that does not mean that the converse q→p is necessarily valid.",
+        "p = \"I went for a long run.\"\nq = \"I burnt a lot of calories.\"\np→q = \"If I go for a long run, I will burn a lot of calories.\"\nq→p = \"If I burnt a lot of calories, it's because I went for a long run.\"\n\nObviously, the converse is not necessarily valid here. Maybe I burnt a lot of calories by playing basketball.",
+        "The inverse of the implication p"
     ]
     
     let image: [UIImage?] = [
@@ -33,5 +43,14 @@ class InformationDictionary1 {
         UIImage(named: "truthtable3"),
         nil,
         UIImage(named: "truthtable4"),
+        nil,
+        UIImage(named: "truthtable5"),
+        nil,
+        UIImage(named: "truthtable6"),
+        nil,
+        nil,
+        nil,
+        nil,
+        nil,
     ]
 }
