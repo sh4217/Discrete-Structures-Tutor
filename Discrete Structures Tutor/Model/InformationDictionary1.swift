@@ -25,7 +25,8 @@ class InformationDictionary1 {
         "The only scenario capable of disproving the implication p→q is if p is true but q remains false.",
         "If we take the implication p→q, then the converse of that implication is q→p.\n\nIf p→q is a valid implication, that does not mean that the converse q→p is necessarily valid.",
         "p = \"I went for a long run.\"\nq = \"I burnt a lot of calories.\"\np→q = \"If I go for a long run, I will burn a lot of calories.\"\nq→p = \"If I burnt a lot of calories, it's because I went for a long run.\"\n\nObviously, the converse is not necessarily valid here. Maybe I burnt a lot of calories by playing basketball.",
-        "The inverse of the implication p"
+        "The inverse of the implication p→q is ~p→~q.\n\nThis is also not logically equivalent to an implication.",
+        "The contrapositive of the implication p→q is ~q→~p. The contrapositive is logically equivalent to the implication. If q is false, the only way that p→q retains its validity is if p was false as well.\n\nIf we know that a long run burns a lot of calories, and someone didn't burn a lot of calories, we know they didn't go on a long run.",
     ]
     
     let image: [UIImage?] = [
@@ -47,6 +48,8 @@ class InformationDictionary1 {
         UIImage(named: "truthtable5"),
         nil,
         UIImage(named: "truthtable6"),
+        nil,
+        nil,
         nil,
         nil,
         nil,
