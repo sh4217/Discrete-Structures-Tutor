@@ -27,6 +27,9 @@ class InformationDictionary1 {
         "p = \"I went for a long run.\"\nq = \"I burnt a lot of calories.\"\np→q = \"If I go for a long run, I will burn a lot of calories.\"\nq→p = \"If I burnt a lot of calories, it's because I went for a long run.\"\n\nObviously, the converse is not necessarily valid here. Maybe I burnt a lot of calories by playing basketball.",
         "The inverse of the implication p→q is ~p→~q.\n\nThis is also not logically equivalent to an implication.",
         "The contrapositive of the implication p→q is ~q→~p. The contrapositive is logically equivalent to the implication. If q is false, the only way that p→q retains its validity is if p was false as well.\n\nIf we know that a long run burns a lot of calories, and someone didn't burn a lot of calories, we know they didn't go on a long run.",
+        "A biconditional/biimplication, represented by p↔q, means \"p if and only if q.\" p↔q is only true if both p and q are true, or if they are both false.\n\nEx: A triangle is isosceles (p) if and only if it has two congruent sides (q).",
+        "Truth table: biconditional statement",
+        "The biconditional statement p↔q is composed of the implication p→q and q→p.\n\nNote that the following are both true:\n\"If a triangle is isosceles, then it has two congruent sides.\"\n\"If a triangle has two congruent sides, then it is isosceles.\"",
     ]
     
     let image: [UIImage?] = [
@@ -54,6 +57,9 @@ class InformationDictionary1 {
         nil,
         nil,
         nil,
+        nil,
+        nil,
+        UIImage(named: "truthtable7"),
         nil,
     ]
 }
