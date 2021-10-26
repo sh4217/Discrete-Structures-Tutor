@@ -31,7 +31,9 @@ class InformationDictionary1 {
         "Truth table: biconditional statement",
         "The biconditional statement p↔q is composed of the implication p→q and q→p.\n\nNote that the following are both true:\n\"If a triangle is isosceles, then it has two congruent sides.\"\n\"If a triangle has two congruent sides, then it is isosceles.\"",
         "A tautology is true no matter what the truth values are of the propositions comprising it.\n\nEx: My shirt is red or not red.\n\nThis statement will always be true, and my shirt's actual color is irrelevant to it.",
-        "Tautology: p∨~p",
+        "A contradiction is false no matter the truth values of the propositions comprising it.",
+        "Two compound propositions are logically equivalent (represented by ≡) if they have the same truth value no matter the truth values of their inputs.\n\n(Put more technically, they are logically equivalent if their biconditional is a tautology.)",
+        "Logical equivalence: ~p∨q ≡ p→q",
     ]
     
     let image: [UIImage?] = [
@@ -62,6 +64,8 @@ class InformationDictionary1 {
         nil,
         nil,
         UIImage(named: "truthtable7"),
+        nil,
+        nil,
         nil,
         nil,
         UIImage(named: "truthtable8"),
