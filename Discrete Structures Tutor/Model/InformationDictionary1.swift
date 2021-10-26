@@ -30,6 +30,8 @@ class InformationDictionary1 {
         "A biconditional/biimplication, represented by p↔q, means \"p if and only if q.\" p↔q is only true if both p and q are true, or if they are both false.\n\nEx: A triangle is isosceles (p) if and only if it has two congruent sides (q).",
         "Truth table: biconditional statement",
         "The biconditional statement p↔q is composed of the implication p→q and q→p.\n\nNote that the following are both true:\n\"If a triangle is isosceles, then it has two congruent sides.\"\n\"If a triangle has two congruent sides, then it is isosceles.\"",
+        "A tautology is true no matter what the truth values are of the propositions comprising it.\n\nEx: My shirt is red or not red.\n\nThis statement will always be true, and my shirt's actual color is irrelevant to it.",
+        "Tautology: p∨~p",
     ]
     
     let image: [UIImage?] = [
@@ -61,5 +63,7 @@ class InformationDictionary1 {
         nil,
         UIImage(named: "truthtable7"),
         nil,
+        nil,
+        UIImage(named: "truthtable8"),
     ]
 }
