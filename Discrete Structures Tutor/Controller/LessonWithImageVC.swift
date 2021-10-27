@@ -4,6 +4,7 @@ class LessonWithImageVC: UIViewController {
 
     let infoDict = InformationDictionary1()
     var slideNumber = 0
+    var lessonNumber = 0
     
     @IBOutlet weak var lessonLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -15,15 +16,15 @@ class LessonWithImageVC: UIViewController {
     }
     
     func updateLabel(slideNumber: Int) {
-        lessonLabel.text = infoDict.lecture[slideNumber]
-        imageView.image = infoDict.image[slideNumber]
+        lessonLabel.text = infoDict.lecture[lessonNumber][slideNumber]
+        imageView.image = infoDict.image[lessonNumber][slideNumber]
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
         slideNumber += 1
         
-        if slideNumber < infoDict.lecture.count {
-            if infoDict.image[slideNumber] != nil {
+        if slideNumber < infoDict.lecture[lessonNumber].count {
+            if infoDict.image[lessonNumber][slideNumber] != nil {
                 updateLabel(slideNumber: slideNumber)
             } else {
                 performSegue(withIdentifier: "noImageNeeded", sender: nil)
@@ -36,6 +37,7 @@ class LessonWithImageVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let target = segue.destination as? LessonViewController {
             target.slideNumber = slideNumber
+            target.lessonNumber = lessonNumber
         }
     }
 }

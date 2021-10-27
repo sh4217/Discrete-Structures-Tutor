@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -120,7 +120,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Propositional Logic"/>
                                 <connections>
-                                    <segue destination="nDc-gv-jwM" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="QN5-UJ-ueQ"/>
+                                    <action selector="propLogicButtonPressed:" destination="daG-hJ-Twm" eventType="touchUpInside" id="0lw-Ck-Dqz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2I-n2-cHv">
@@ -130,6 +130,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Predicate Logic"/>
+                                <connections>
+                                    <action selector="predLogicButtonPressed:" destination="daG-hJ-Twm" eventType="touchUpInside" id="28M-dX-qio"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyd-zc-66C">
                                 <rect key="frame" x="100" y="319" width="214" height="35"/>
@@ -216,7 +219,10 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="MhU-WG-XVT" id="Zu9-z9-2hD"/>
+                        <outlet property="predLogicButton" destination="j2I-n2-cHv" id="LU7-y2-y10"/>
+                        <outlet property="propLogicButton" destination="s52-oe-5MF" id="5hY-Y1-4bz"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="topicsToView" animates="NO" modalPresentationStyle="fullScreen" id="DoC-yg-YZ7"/>
+                        <segue destination="nDc-gv-jwM" kind="presentation" identifier="topicsToLesson" animates="NO" modalPresentationStyle="fullScreen" id="ZeL-mh-5kE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tmh-cP-hqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -335,8 +341,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QN5-UJ-ueQ"/>
-        <segue reference="4BU-cx-zCK"/>
+        <segue reference="ZeL-mh-5kE"/>
+        <segue reference="ryX-rJ-1Rz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
