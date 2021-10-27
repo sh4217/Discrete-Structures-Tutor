@@ -37,7 +37,15 @@ class InformationDictionary1 {
             "Logical equivalence: ~p∨q ≡ p→q",
         ],
         [
-            "",
+            "A predicate is a statement involving a variable. A predicate is neither true nor false.",
+            "Ex: x < 10\n\nx is the subject of the statement.\n\n\"is less than 10\" is the predicate of the statement.",
+            "Such a statement can be written as P(x), in which P represents the predicate and x represents the variable/subject.",
+            "When we give x a truth value, it becomes a proposition, and we can evaluate its truth value.\n\nFor x < 10, if we let x = 10, then it becomes the proposition 10 < 10, which has a truth value of false.",
+            "P(x) represents 3x + 10 > 5\n\nP(5) is true. P(-5) is false.",
+            "A predicate can have multiple variables.\n\nLet Q(x, y) represent x + y = 10.\n\nQ(3, 7) has a truth value of true.\n\nQ(0, 1) has a truth value of false.",
+            "Predicates can be used to denote English statements. Let A(b, c) represent \"State B borders state C.\"\n\nThe truth value of A(California, Nevada) is true.\n\nThe truth value of A(Georgia, Wyoming) is false.",
+            "Quantifiers allow us to make more precise statements about the range of elements over which a predicate is true.",
+            "The universal quantifier, written as ∀, indicates that P(x) has a truth value of true for all values of x in the domain. We can write this as ∀ xP(x).\n\nIf an element is found which makes P(x) false, it is called a counterexample.",
         ],
     ]
     
@@ -77,6 +85,14 @@ class InformationDictionary1 {
             UIImage(named: "truthtable8"),
         ],
         [
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
             nil,
         ],
     ]
