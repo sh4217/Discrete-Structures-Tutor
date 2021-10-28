@@ -45,7 +45,13 @@ class InformationDictionary1 {
             "A predicate can have multiple variables.\n\nLet Q(x, y) represent x + y = 10.\n\nQ(3, 7) has a truth value of true.\n\nQ(0, 1) has a truth value of false.",
             "Predicates can be used to denote English statements. Let A(b, c) represent \"State B borders state C.\"\n\nThe truth value of A(California, Nevada) is true.\n\nThe truth value of A(Georgia, Wyoming) is false.",
             "Quantifiers allow us to make more precise statements about the range of elements over which a predicate is true.",
-            "The universal quantifier, written as ∀, indicates that P(x) has a truth value of true for all values of x in the domain. We can write this as ∀ xP(x).\n\nIf an element is found which makes P(x) false, it is called a counterexample.",
+            "The universal quantifier, written as ∀, indicates that P(x) has a truth value of true for all values of x in the domain. We can write this as ∀ xP (x).\n\nIf an element is found which makes P(x) false, it is called a counterexample.",
+            "Ex: P(x) denotes x > 3. ∀x P(x) denotes \"for every value of x, x > 3.\" This is a valid use of the universal quantifier, and the resulting proposition has a truth value of false.",
+            "Universally qualified predicates have a truth value of either true or false; they are ultimately a form of proposition.",
+            "You can combine universal quantification with logical operators.\n\nP(x): x is a human.\nQ(x): x is mortal.\n∀x(P(x) -> G(x)): All humans are mortal.",
+            "The existential quantifier, ∃, denotes that there exists, or there is at least one value of x, that makes the predicate true. ∃x P(x) is thus also a proposition with a truth value of true or false.",
+            "P(x): I have friends who are intelligent.\nQ(x): I have friends who are funny.\n\n∃x(P(x) ∧ Q(x)): I have at least one friend who is intelligent and funny.",
+            "The quantifiers can be combined and used with multiple predicates to form more complex propositions.\n\nEx: ∀x ∃y (xy = 500)\n\nFor all values of x, there exists at least one value of y for which x times y = 500.\n\nAssuming that the domain is limited to real numbers, this statement is true.",
         ],
     ]
     
@@ -85,6 +91,12 @@ class InformationDictionary1 {
             UIImage(named: "truthtable8"),
         ],
         [
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
             nil,
             nil,
             nil,
