@@ -53,6 +53,20 @@ class InformationDictionary1 {
             "P(x): I have friends who are intelligent.\nQ(x): I have friends who are funny.\n\n∃x(P(x) ∧ Q(x)): I have at least one friend who is intelligent and funny.",
             "The quantifiers can be combined and used with multiple predicates to form more complex propositions.\n\nEx: ∀x ∃y (xy = 500)\n\nFor all values of x, there exists at least one value of y for which x times y = 500.\n\nAssuming that the domain is limited to real numbers, this statement is true.",
         ],
+        [
+            "An argument is a series of propositions. All of them except the last one are called premises; the last statement is called the conclusion.",
+            "An argument is considered valid if the premises imply the conclusion.",
+            "An argument form is an argument represented with symbolic logic and operators that will be valid no matter what propositions are substituted for the variables.",
+            "Inference rules allow us to construct complex argument forms out of simple argument forms.",
+            "Modus Ponens is a common rule of inference in which the premises are p and p -> q, and the conclusion is q.\n\nIf p is true, and p implies q, then q must be true as well.",
+            "Ex: p = \"It is snowing.\"\nq = \"The roads will be closed.\"\np -> q = \"If it is snowing, then the roads will be closed.\"\n\nIf it is snowing, and the implication is true, then we can infer that the roads must be closed.",
+            "Modus Tollens, also known as Denying the Consequent, states that the premises ~q and p -> q imply the conclusion ~p. \n\nIf p implies q, the only way q can be false is if p was false as well.",
+            "Ex: Take the previous example. If the roads close when it snows, and the roads are open, we can conclude that it's not snowing.",
+            "Hypothetical syllogism, also known as a chain argument, allows us to infer that if a premise implies a conclusion, and that conclusion serves as the premise implying a second conclusion, then the initial premise also implies the second conclusion.",
+            "Let's say that whenever I get hungry, I eat food. Let's also say that whenever I eat food, I wash it down with some water. We can thereby conclude that if I get hungry, I will soon drink some water.",
+            "Disjunctive syllogism states that if at least one of two propositions is be true (p∨q), and one of the propositions is false (~p), we can conclude that the other proposition is true.",
+            "Example:\n\nToday is either a weekday or a weekend.\n\nIt is not a weekday.\n\nTherefore, today is a weekend.",
+        ],
     ]
     
     let image: [[UIImage?]] = [
@@ -105,6 +119,21 @@ class InformationDictionary1 {
             nil,
             nil,
             nil,
+            nil,
+        ],
+        
+        [
+            nil,
+            nil,
+            nil,
+            nil,
+            UIImage(named: "inference1"),
+            UIImage(named: "truthtable9"),
+            UIImage(named: "inference2"),
+            UIImage(named: "truthtable10"),
+            UIImage(named: "inference3"),
+            nil,
+            UIImage(named: "disjunctive-syllogism"),
             nil,
         ],
     ]

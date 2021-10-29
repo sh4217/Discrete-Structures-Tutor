@@ -141,6 +141,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Rules of Inference"/>
+                                <connections>
+                                    <action selector="rulesButtonPressed:" destination="daG-hJ-Twm" eventType="touchUpInside" id="Orf-qW-E9Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-9f-Z3n">
                                 <rect key="frame" x="100" y="377" width="214" height="35"/>
@@ -221,6 +224,7 @@
                         <outlet property="backButton" destination="MhU-WG-XVT" id="Zu9-z9-2hD"/>
                         <outlet property="predLogicButton" destination="j2I-n2-cHv" id="LU7-y2-y10"/>
                         <outlet property="propLogicButton" destination="s52-oe-5MF" id="5hY-Y1-4bz"/>
+                        <outlet property="rulesButton" destination="Iyd-zc-66C" id="FAd-Kz-J03"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="topicsToView" animates="NO" modalPresentationStyle="fullScreen" id="DoC-yg-YZ7"/>
                         <segue destination="nDc-gv-jwM" kind="presentation" identifier="topicsToLesson" animates="NO" modalPresentationStyle="fullScreen" id="ZeL-mh-5kE"/>
                     </connections>
@@ -341,7 +345,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nBi-Pz-I35"/>
+        <segue reference="ZeL-mh-5kE"/>
         <segue reference="Glr-12-XcI"/>
     </inferredMetricsTieBreakers>
     <resources>

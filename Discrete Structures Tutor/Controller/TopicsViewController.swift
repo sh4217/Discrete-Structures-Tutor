@@ -8,6 +8,7 @@ class TopicsViewController: UIViewController {
     
     @IBOutlet weak var propLogicButton: UIButton!
     @IBOutlet weak var predLogicButton: UIButton!
+    @IBOutlet weak var rulesButton: UIButton!
     
     @IBAction func close() {
         dismiss(animated: true, completion: nil)
@@ -29,6 +30,11 @@ class TopicsViewController: UIViewController {
     
     @IBAction func predLogicButtonPressed(_ sender: Any) {
         lessonNumber = 1
+        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+    }
+    
+    @IBAction func rulesButtonPressed(_ sender: Any) {
+        lessonNumber = 2
         performSegue(withIdentifier: "topicsToLesson", sender: nil)
     }
     
