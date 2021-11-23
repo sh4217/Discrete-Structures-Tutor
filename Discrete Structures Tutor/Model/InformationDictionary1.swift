@@ -82,6 +82,18 @@ class InformationDictionary1 {
             "Absorption",
             "If my bed is comfy, then I will take a nap.\n\nTherefore, if my bed is comfy, then my bed is comfy and I will take a nap.",
         ],
+        [
+            "A proof is a sequence of statements that constitute a valid argument to show that a theorem is true.\n\nA proof relies on axioms or postulates, statements assumed to be true, and uses the rules of inference to draw conclusions from them.",
+            "In computer science, we generally use informal proofs in which not every step is explicitly stated. This makes the proofs shorter and easier to understand, but may also introduce errors.",
+            "The most common type of proof is a direct proof.\n\nDirect proofs are done on statements that take the form p -> q. Assume that p is q, and then show why q must therefore be true.",
+            "Example: show that the square of an odd number is an odd number.\n\nRephrased: If n is odd, then n^2 is odd.",
+            "If n is odd, it can be represented as 2k + 1, in which k is some integer.\n\nn^2 = (2k + 1)^2\n\nn^2 = 4k^2+4k + 1 = 2(2k^2 + 2k) + 1\n\nSince 2k^2+2k must equal an integer, n^2 still takes the form 2k + 1 and is odd.",
+            "Whereas a direct proof relies on the implication p -> q, an indirect proof relies on its contrapositive, ~q -> ~p.\n\nAn implication and its contrapositive are always logically equivalent.\n\nWe need to show that not q implies not p, and that will show that p implies q.",
+            "Example: prove that if 3n + 2 is odd, then n must be odd.\n\nTo perform an indirect proof, we must show that ~q (n is even) implies ~p (3n + 2 is even).",
+            "If n is even, then it can be set equal to two times an integer.\n\n3n + 2 = 3(2k) + 2\n\n= 6k + 2\n\n= 2(3k+1).\n\n3k + 1 must be an integer, so 3n + 2 is equal to two times an integer.",
+            "We have shown that the contrapositive of the original implication is true, so the implication must be true as well.",
+            "In a proof by contradiction, we assume that the statement p is false, and then prove that ~p is impossible.\n\nFor the implication p -> q, we would need to show that it is impossible for p to be true and q to be false.",
+        ],
     ]
     
     let image: [[UIImage?]] = [
@@ -164,6 +176,18 @@ class InformationDictionary1 {
             UIImage(named: "destructive-dilemma"),
             nil,
             UIImage(named: "absorption"),
+            nil,
+        ],
+        [
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
             nil,
         ],
     ]

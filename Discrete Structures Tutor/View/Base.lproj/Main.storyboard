@@ -152,6 +152,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Mathematical Proofs"/>
+                                <connections>
+                                    <action selector="proofsButtonPressed:" destination="daG-hJ-Twm" eventType="touchUpInside" id="9mh-tA-fTP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAN-wL-jbp">
                                 <rect key="frame" x="100" y="431" width="214" height="35"/>
@@ -223,6 +226,7 @@
                     <connections>
                         <outlet property="backButton" destination="MhU-WG-XVT" id="Zu9-z9-2hD"/>
                         <outlet property="predLogicButton" destination="j2I-n2-cHv" id="LU7-y2-y10"/>
+                        <outlet property="proofsButton" destination="vTI-9f-Z3n" id="bDf-fa-ioD"/>
                         <outlet property="propLogicButton" destination="s52-oe-5MF" id="5hY-Y1-4bz"/>
                         <outlet property="rulesButton" destination="Iyd-zc-66C" id="FAd-Kz-J03"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="topicsToView" animates="NO" modalPresentationStyle="fullScreen" id="DoC-yg-YZ7"/>

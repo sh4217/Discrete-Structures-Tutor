@@ -9,6 +9,8 @@ class TopicsViewController: UIViewController {
     @IBOutlet weak var propLogicButton: UIButton!
     @IBOutlet weak var predLogicButton: UIButton!
     @IBOutlet weak var rulesButton: UIButton!
+    @IBOutlet weak var proofsButton: UIButton!
+    
     
     @IBAction func close() {
         dismiss(animated: true, completion: nil)
@@ -38,6 +40,10 @@ class TopicsViewController: UIViewController {
         performSegue(withIdentifier: "topicsToLesson", sender: nil)
     }
     
+    @IBAction func proofsButtonPressed(_ sender: Any) {
+        lessonNumber = 3
+        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let target = segue.destination as? LessonViewController {
             target.lessonNumber = lessonNumber
