@@ -101,7 +101,13 @@ class InformationDictionary1 {
         ],
         
         [
-            "",
+            "A counting problem asks how many different ways an event can occur.\n\nExample: How many combinations of numbers can occur if you roll a die four times?",
+            "The fundamental counting principle states if a procedure can be broken into different stages, you can find the number of combinations by multiplying the number of ways each step can occur together.\n\nIn the aforementioned example, each roll has four possible results, so the number of combinations equals 6 * 6 * 6 * 6 = 1296.",
+            "A permutation is an arrangement of items in a distinct order, aka with no repeating items.",
+            "To find the number of permutations of n items taken r at a time, use the following formula.",
+            "Example: how many permutations of numbers can you make with three digits?\n\nn = 10, because there are ten different digits available to you.\n\nr = 3 because you are taking them three at a time.\n\n5!/(5-3)! = 60",
+            "A combination is a similar arrangement, except order doesn't matter, and items can repeat. \n\nFormula:",
+            "Example: how many different five-card hands can be dealt from a standard deck of fifty-two cards?\n\nn = 52, r = 5\n\nCombinations = 52!/(5!(52-5)!) = 2,598,960",
         ],
         
         [
@@ -219,6 +225,12 @@ class InformationDictionary1 {
         ],
         
         [
+            nil,
+            nil,
+            nil,
+            UIImage(named: "permutations"),
+            nil,
+            UIImage(named: "combinations"),
             nil,
         ],
         
