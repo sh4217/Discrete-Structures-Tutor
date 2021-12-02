@@ -99,6 +99,23 @@ class InformationDictionary1 {
             "Example: All primes are even.\n\nCounterexample: 2",
             "Remember: you can disprove something with a counterexample, but you cannot prove a universal statement with an example.",
         ],
+        
+        [
+            "",
+        ],
+        
+        [
+            "",
+        ],
+        
+        [
+            "",
+        ],
+        
+        [
+            "",
+        ],
+    
     ]
     
     let image: [[UIImage?]] = [
@@ -198,6 +215,22 @@ class InformationDictionary1 {
             nil,
             nil,
             nil,
+            nil,
+        ],
+        
+        [
+            nil,
+        ],
+        
+        [
+            nil,
+        ],
+        
+        [
+            nil,
+        ],
+        
+        [
             nil,
         ],
     ]

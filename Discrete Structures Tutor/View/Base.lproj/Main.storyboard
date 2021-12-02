@@ -163,6 +163,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Counting"/>
+                                <connections>
+                                    <action selector="countingButtonPressed:" destination="daG-hJ-Twm" eventType="touchUpInside" id="0QJ-xD-Jud"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U67-fP-pFk">
                                 <rect key="frame" x="100" y="486" width="214" height="35"/>
@@ -171,6 +174,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sets"/>
+                                <connections>
+                                    <action selector="setsButtonPressed:" destination="daG-hJ-Twm" eventType="touchUpInside" id="eH8-xY-FYe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5t-LE-5va">
                                 <rect key="frame" x="100" y="541" width="214" height="35"/>
@@ -178,7 +184,10 @@
                                     <constraint firstAttribute="height" constant="35" id="6NC-er-lMF"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sequences and Series"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sequences/Series"/>
+                                <connections>
+                                    <action selector="sequencesButtonPressed:" destination="daG-hJ-Twm" eventType="touchUpInside" id="Xbh-Ek-uIL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzo-3V-Rxq">
                                 <rect key="frame" x="100" y="596" width="214" height="35"/>
@@ -186,7 +195,10 @@
                                     <constraint firstAttribute="height" constant="35" id="MFn-dc-ctL"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Relations and Functions"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Relations/Functions"/>
+                                <connections>
+                                    <action selector="relationsButtonPressed:" destination="daG-hJ-Twm" eventType="touchUpInside" id="QE9-3Z-wLj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L2f-EL-yXa"/>
@@ -225,10 +237,14 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="MhU-WG-XVT" id="Zu9-z9-2hD"/>
+                        <outlet property="countingButton" destination="LAN-wL-jbp" id="9fS-ls-7Ps"/>
                         <outlet property="predLogicButton" destination="j2I-n2-cHv" id="LU7-y2-y10"/>
                         <outlet property="proofsButton" destination="vTI-9f-Z3n" id="bDf-fa-ioD"/>
                         <outlet property="propLogicButton" destination="s52-oe-5MF" id="5hY-Y1-4bz"/>
+                        <outlet property="relationsButton" destination="yzo-3V-Rxq" id="k14-Qo-L3v"/>
                         <outlet property="rulesButton" destination="Iyd-zc-66C" id="FAd-Kz-J03"/>
+                        <outlet property="sequencesButton" destination="W5t-LE-5va" id="2jc-C4-Ajd"/>
+                        <outlet property="setsButton" destination="U67-fP-pFk" id="i3Q-EO-YTH"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="topicsToView" animates="NO" modalPresentationStyle="fullScreen" id="DoC-yg-YZ7"/>
                         <segue destination="nDc-gv-jwM" kind="presentation" identifier="topicsToLesson" animates="NO" modalPresentationStyle="fullScreen" id="ZeL-mh-5kE"/>
                     </connections>
