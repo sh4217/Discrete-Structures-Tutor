@@ -93,6 +93,11 @@ class InformationDictionary1 {
             "If n is even, then it can be set equal to two times an integer.\n\n3n + 2 = 3(2k) + 2\n\n= 6k + 2\n\n= 2(3k+1).\n\n3k + 1 must be an integer, so 3n + 2 is equal to two times an integer.",
             "We have shown that the contrapositive of the original implication is true, so the implication must be true as well.",
             "In a proof by contradiction, we assume that the statement p is false, and then prove that ~p is impossible.\n\nFor the implication p -> q, we would need to show that it is impossible for p to be true and q to be false.",
+            "Example: if n is an integer and n^3 + 1 is odd, then n must be even. To prove this by contradiction, assume the opposite: that n^3 + 1 being odd proves that n is odd.",
+            "If n is odd, we can write it as 2k + 1.\n\nn^3 + 1\n\n(2k + 1)^3 + 1\n\n8k^3+12k^2+6k+2\n\n2(4k^3+6k^2+3k+1)\n\nThus, we have rewritten n^3 + 1 in the format of an even integer, which contradicts the premise. It is not possible for n to be odd if n^3 + 1 is odd.",
+            "A proof by counterexample is not technically a proof, but it is a simple way of demonstrating that a universal statement is false.",
+            "Example: All primes are even.\n\nCounterexample: 2",
+            "Remember: you can disprove something with a counterexample, but you cannot prove a universal statement with an example.",
         ],
     ]
     
@@ -179,6 +184,11 @@ class InformationDictionary1 {
             nil,
         ],
         [
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
             nil,
             nil,
             nil,
