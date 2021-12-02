@@ -111,7 +111,15 @@ class InformationDictionary1 {
         ],
         
         [
-            "",
+            "A set is a well-defined collection of distinct objects.\n\nEach of these are referred to as members or elements.\n\nA set can be described by listing elements, separated by commas, enclosed in braces.\n\nVowels = {a, e, i, o, u}",
+            "If element A belongs to set S, this is written as:\n\nA ∈ S\n\nIf A is not a member of set S, it is written as:\n\nA ∉ S",
+            "A = { x | x ∈ S, P(x) } or A = { x ∈ S | P(x)\n\nThis means that A is the set of all elements x within the set S that satisfy the property P",
+            "Standard symbols represent sets of numbers common in proofs. A few of the commonest are:\n\nN: the set of all natural numbers (positive integers)\n\nZ: the set of all integers\n\nE: the set of all even integers",
+            "A subset X of set Y contains only elements found within set Y.\n\nX ⊆ Y: X is a subset of Y\n\nX ⊄ Y: X is not a subset of Y",
+            "The empty set contains no elements and is written ∅. It can be considered a subset of every set.",
+            "Some sets are finite, and can be said to have an integer n elements.\n\nY = {1, 2, 3} is a finite set.\n\nSome sets are not finite, and are called infinite sets.\n\nZ, the set of all integers, is an infinite set.",
+            "The cardinality of a set is how many distinct elements it includes.\n\nX = {1, 2, 3, 5, 1}\n\nThe cardinality of X, written as |X|, is 5.",
+            "The power set of set X, written as P(x), is the set of all subsets of X.\n\nX = {1, 2}\n\nP(X) = {{∅}, {1}, {2}, {1, 2}}.\n\nNote that this is comparable to a permutation, not a combination, of X's elements.",
         ],
         
         [
@@ -235,6 +243,14 @@ class InformationDictionary1 {
         ],
         
         [
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
             nil,
         ],
         
