@@ -118,8 +118,13 @@ class InformationDictionary1 {
             "A subset X of set Y contains only elements found within set Y.\n\nX ⊆ Y: X is a subset of Y\n\nX ⊄ Y: X is not a subset of Y",
             "The empty set contains no elements and is written ∅. It can be considered a subset of every set.",
             "Some sets are finite, and can be said to have an integer n elements.\n\nY = {1, 2, 3} is a finite set.\n\nSome sets are not finite, and are called infinite sets.\n\nZ, the set of all integers, is an infinite set.",
-            "The cardinality of a set is how many distinct elements it includes.\n\nX = {1, 2, 3, 5, 1}\n\nThe cardinality of X, written as |X|, is 5.",
+            "The cardinality of a set is how many distinct elements it includes.\n\nX = {1, 2, 3, 5, 0}\n\nThe cardinality of X, written as |X|, is 5.",
             "The power set of set X, written as P(x), is the set of all subsets of X.\n\nX = {1, 2}\n\nP(X) = {{∅}, {1}, {2}, {1, 2}}.\n\nNote that this is comparable to a permutation, not a combination, of X's elements.",
+            "Operations can be performed on one or more sets to create new sets.",
+            "The union of A and B, written A ∪ B, contains all elements that are in A, B, or both.\n\nA = {A, B, D, F, Z}\nB = {C, D, J, K}\nA ∪ B = {A, B, D, F, Z, C, J, K}",
+            "The intersection of sets A and B, A ∩ B, contains all the elements that both A and B contain.\n\nA = {1, 5, 7, 9}\nB = {2, 5, 9}\nA ∩ B = {5, 9}",
+            "If the intersection of two sets is the empty set, the two sets are considered disjoint.",
+            "The difference of A and B, A - B, is a set containing all the elements of A except the elements that are also in B.\nA = {1, 2, 3, 4}\nB = {4, 5, 6, 7}\nA - B = {1, 2, 3}",
         ],
         
         [
@@ -243,6 +248,11 @@ class InformationDictionary1 {
         ],
         
         [
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
             nil,
             nil,
             nil,
