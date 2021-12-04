@@ -143,6 +143,14 @@ class InformationDictionary1 {
             "We can think of x and y coordinates as a binary relation, in which each of the x inputs outputs one or more y values.\n\n(-3, 4), (3, -1), (4, 3)\n\n-3 -> 4\n3 -> 1\n4 -> -1, 3",
             "Take the following relation:\n\n{(1, 0), (5, 4), (3, 2)\n\nThe domain is the set of all x-values in the relation.\n\nDomain = {1, 3, 2}",
             "The range is the set of all y-values in the relation.\n\nRange = {0, 2, 4}",
+            "A function is a relation in which each input has exactly one output. If you take two sets, A and B, every value of A will correspond to one value of B. It is okay for multiple values of A to correspond to B or for certain values of B not to be \"pointed toward,\" but no value of A is allowed to be paired to more than one value of B.",
+            "f(x) = 3x + 5 is an example of a function written in function notation. Here, x is the independent variable, and f(x) is the dependent variable.",
+            "A function is one-to-one, or injective, if each value of X corresponds to exactly one value of Y. Each Y value can have only one X-pair, but there can be Y-values without an X-pair.",
+            "A function is onto, or surjective, if every Y-value has at least one X-pair. It is possible that a Y-value may have multiple X-pairs",
+            "A function is bijective if it is both injective and surjective. Each X-value points to a distinct Y-value, and there are no unpaired Y-values.",
+            "If a function is bijective, then it is invertible (the order of each pair can be reversed while still being a valid function.",
+            "To find the inverse of a bijective function, swap the x and the f(x) and solve for f(x).",
+            "A composite function entails using the output of one function as the input for another.\n\nf(x) = 3x + 5\n\ng(x) = 2x\n\nf(g(3)) = 3(2(3)) + 5",
         ],
     
     ]
@@ -286,6 +294,14 @@ class InformationDictionary1 {
         ],
         
         [
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
             nil,
             nil,
             nil,
