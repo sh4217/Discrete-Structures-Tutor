@@ -128,11 +128,21 @@ class InformationDictionary1 {
         ],
         
         [
-            "",
+            "A sequence is a list, usually of numbers, often following some type of pattern.\n\nEx: 1, 2, 3, 4",
+            "A series is the sum gotten from adding a sequence of numbers following some pattern together.\n\nEx: 1 + 2 + 3 + 4 = 10",
+            "An arithmetic sequence is a sequence in which the difference between consecutive numbers on the list is always the same.\n\nEx: 1, 2, 3, 4, 5 is an arithmetic sequence because 1 is being added each time.\n\n1, 2, 6, 8, 9 is not an arithmetic sequence because the consecutive elements change by variable amounts.",
+            "To find the nth value in an arithmetic sequence, take the first value in the sequence and add the common difference times n - 1.",
+            "The sum of an arithmetic series can be found with the following formula:\n\nS = n(a + b)/2\n\nS = sum\nn = number of terms\na = first term\nb = last term",
+            "A geometric series is similar to an arithmetic series, except the next number is found by multiplying by a common ratio.\n\nEx: 1, 2, 4, 8: the sum is 15, and the common ratio is 15.",
+            "With r = common ratio, you can find the nth term of a geometric sequence as follows: a(n) = a(1)r^(n-1)",
+            "Sum of n terms of a geometric sequence:\n\nS = (a(1)*(r^n - 1))/(r - 1)",
         ],
         
         [
-            "",
+            "A relation describes ordered matches between elements of different sets. The most common type is ordered pairs between two sets, forming a binary relation.",
+            "We can think of x and y coordinates as a binary relation, in which each of the x inputs outputs one or more y values.\n\n(-3, 4), (3, -1), (4, 3)\n\n-3 -> 4\n3 -> 1\n4 -> -1, 3",
+            "Take the following relation:\n\n{(1, 0), (5, 4), (3, 2)\n\nThe domain is the set of all x-values in the relation.\n\nDomain = {1, 3, 2}",
+            "The range is the set of all y-values in the relation.\n\nRange = {0, 2, 4}",
         ],
     
     ]
@@ -266,9 +276,19 @@ class InformationDictionary1 {
         
         [
             nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
+            nil,
         ],
         
         [
+            nil,
+            nil,
+            nil,
             nil,
         ],
     ]
