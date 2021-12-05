@@ -8,6 +8,85 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Lesson Or ReviewVC-->
+        <scene sceneID="f0S-20-pMu">
+            <objects>
+                <viewController id="XV8-Xh-m7b" customClass="LessonOrReviewVC" customModule="Discrete_Structures_Tutor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gjs-P4-eRA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to study this topic, or do you want to do practice questions?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAR-Aa-Vst">
+                                <rect key="frame" x="50" y="144" width="314" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="CHy-AT-40h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDZ-1w-gGW">
+                                <rect key="frame" x="100" y="644" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ERV-iN-wFC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Practice"/>
+                                <connections>
+                                    <action selector="practiceButtonPressed:" destination="XV8-Xh-m7b" eventType="touchUpInside" id="y0M-Jn-O2o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQC-yL-nFV">
+                                <rect key="frame" x="20" y="64" width="62" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="WHc-RJ-Jke"/>
+                                    <constraint firstAttribute="width" constant="62" id="eS6-SD-EjK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Back"/>
+                                <connections>
+                                    <action selector="close" destination="XV8-Xh-m7b" eventType="touchUpInside" id="uK7-36-yNj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgs-eS-Sj1">
+                                <rect key="frame" x="100" y="494" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dX6-e9-E4z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Study"/>
+                                <connections>
+                                    <action selector="studyButtonPressed:" destination="XV8-Xh-m7b" eventType="touchUpInside" id="xaj-Ak-Pt2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0at-Cb-tcm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uQC-yL-nFV" firstAttribute="top" secondItem="0at-Cb-tcm" secondAttribute="top" constant="20" id="BHU-2r-1B2"/>
+                            <constraint firstItem="Dgs-eS-Sj1" firstAttribute="top" secondItem="cAR-Aa-Vst" secondAttribute="bottom" constant="150" id="BoU-Ge-c5Y"/>
+                            <constraint firstItem="uQC-yL-nFV" firstAttribute="leading" secondItem="0at-Cb-tcm" secondAttribute="leading" constant="20" id="F5p-Do-jLZ"/>
+                            <constraint firstItem="0at-Cb-tcm" firstAttribute="trailing" secondItem="cAR-Aa-Vst" secondAttribute="trailing" constant="50" id="HBN-Mk-bv3"/>
+                            <constraint firstItem="cAR-Aa-Vst" firstAttribute="top" secondItem="0at-Cb-tcm" secondAttribute="top" constant="100" id="JCa-wc-W6B"/>
+                            <constraint firstItem="cAR-Aa-Vst" firstAttribute="leading" secondItem="0at-Cb-tcm" secondAttribute="leading" constant="50" id="PKI-my-1mj"/>
+                            <constraint firstItem="Dgs-eS-Sj1" firstAttribute="leading" secondItem="0at-Cb-tcm" secondAttribute="leading" constant="100" id="Z9A-dR-Qdc"/>
+                            <constraint firstItem="pDZ-1w-gGW" firstAttribute="top" secondItem="Dgs-eS-Sj1" secondAttribute="bottom" constant="100" id="aFO-Li-3bA"/>
+                            <constraint firstItem="pDZ-1w-gGW" firstAttribute="leading" secondItem="0at-Cb-tcm" secondAttribute="leading" constant="100" id="jj8-Mg-NLG"/>
+                            <constraint firstItem="0at-Cb-tcm" firstAttribute="trailing" secondItem="pDZ-1w-gGW" secondAttribute="trailing" constant="100" id="ltd-nZ-McA"/>
+                            <constraint firstItem="0at-Cb-tcm" firstAttribute="trailing" secondItem="Dgs-eS-Sj1" secondAttribute="trailing" constant="100" id="wdA-mK-3Zr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="practiceButton" destination="pDZ-1w-gGW" id="LNh-Ks-JsB"/>
+                        <outlet property="studyButton" destination="Dgs-eS-Sj1" id="bKZ-uS-LkP"/>
+                        <segue destination="nDc-gv-jwM" kind="presentation" identifier="choiceToLesson" animates="NO" modalPresentationStyle="fullScreen" id="tr1-Rc-0fx"/>
+                        <segue destination="dZz-hg-Xhx" kind="presentation" identifier="choiceToReview" animates="NO" modalPresentationStyle="fullScreen" id="EAq-N9-T2K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhA-K0-ohc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="-597"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -246,7 +325,7 @@
                         <outlet property="sequencesButton" destination="W5t-LE-5va" id="2jc-C4-Ajd"/>
                         <outlet property="setsButton" destination="U67-fP-pFk" id="i3Q-EO-YTH"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="topicsToView" animates="NO" modalPresentationStyle="fullScreen" id="DoC-yg-YZ7"/>
-                        <segue destination="nDc-gv-jwM" kind="presentation" identifier="topicsToLesson" animates="NO" modalPresentationStyle="fullScreen" id="ZeL-mh-5kE"/>
+                        <segue destination="XV8-Xh-m7b" kind="presentation" identifier="topicsToChoice" animates="NO" modalPresentationStyle="fullScreen" id="3Px-cP-2x1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tmh-cP-hqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -301,6 +380,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acW-4t-Sbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2516" y="100"/>
+        </scene>
+        <!--Lesson ReviewVC-->
+        <scene sceneID="Qhc-yw-yGf">
+            <objects>
+                <viewController id="dZz-hg-Xhx" customClass="LessonReviewVC" customModule="Discrete_Structures_Tutor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kgJ-TE-n9k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxJ-19-O1f">
+                                <rect key="frame" x="20" y="64" width="62" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="H54-Fk-dRD"/>
+                                    <constraint firstAttribute="width" constant="62" id="uOj-Tb-wgF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Back"/>
+                                <connections>
+                                    <action selector="close" destination="dZz-hg-Xhx" eventType="touchUpInside" id="hff-YO-nKF"/>
+                                    <action selector="close" destination="XV8-Xh-m7b" eventType="touchUpInside" id="i3x-c7-xaD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iDO-gB-7kz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rxJ-19-O1f" firstAttribute="top" secondItem="iDO-gB-7kz" secondAttribute="top" constant="20" id="IaP-6I-eOq"/>
+                            <constraint firstItem="rxJ-19-O1f" firstAttribute="leading" secondItem="iDO-gB-7kz" secondAttribute="leading" constant="20" id="htn-Bv-UBl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvJ-2j-LWP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2516" y="-596"/>
+        </scene>
+        <!--Review With ImageVC-->
+        <scene sceneID="bqd-s1-WcD">
+            <objects>
+                <viewController id="GY1-es-orw" customClass="ReviewWithImageVC" customModule="Discrete_Structures_Tutor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eEo-Cf-htF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vRp-BG-B9g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSe-7V-8sR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3341" y="-597"/>
         </scene>
         <!--Lesson With ImageVC-->
         <scene sceneID="Krz-jj-WKp">
@@ -365,8 +493,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZeL-mh-5kE"/>
-        <segue reference="Glr-12-XcI"/>
+        <segue reference="tr1-Rc-0fx"/>
+        <segue reference="ryX-rJ-1Rz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">

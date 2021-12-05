@@ -30,45 +30,45 @@ class TopicsViewController: UIViewController {
     
     @IBAction func propLogicButtonPressed(_ sender: Any) {
         lessonNumber = 0
-        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+        performSegue(withIdentifier: "topicsToChoice", sender: nil)
     }
     
     @IBAction func predLogicButtonPressed(_ sender: Any) {
         lessonNumber = 1
-        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+        performSegue(withIdentifier: "topicsToChoice", sender: nil)
     }
     
     @IBAction func rulesButtonPressed(_ sender: Any) {
         lessonNumber = 2
-        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+        performSegue(withIdentifier: "topicsToChoice", sender: nil)
     }
     
     @IBAction func proofsButtonPressed(_ sender: Any) {
         lessonNumber = 3
-        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+        performSegue(withIdentifier: "topicsToChoice", sender: nil)
     }
     
     @IBAction func countingButtonPressed(_ sender: Any) {
         lessonNumber = 4
-        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+        performSegue(withIdentifier: "topicsToChoice", sender: nil)
     }
     
     @IBAction func setsButtonPressed(_ sender: Any) {
         lessonNumber = 5
-        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+        performSegue(withIdentifier: "topicsToChoice", sender: nil)
     }
     @IBAction func sequencesButtonPressed(_ sender: Any) {
         lessonNumber = 6
-        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+        performSegue(withIdentifier: "topicsToChoice", sender: nil)
     }
     
     @IBAction func relationsButtonPressed(_ sender: Any) {
         lessonNumber = 7
-        performSegue(withIdentifier: "topicsToLesson", sender: nil)
+        performSegue(withIdentifier: "topicsToChoice", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let target = segue.destination as? LessonViewController {
+        if let target = segue.destination as? LessonOrReviewVC {
             target.lessonNumber = lessonNumber
         }
     }
