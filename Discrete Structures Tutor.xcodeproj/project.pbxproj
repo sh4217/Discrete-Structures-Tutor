@@ -20,6 +20,7 @@
 		FEAD79FB270A6070000C4F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAD79FA270A6070000C4F0F /* Assets.xcassets */; };
 		FEAD79FE270A6070000C4F0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAD79FC270A6070000C4F0F /* LaunchScreen.storyboard */; };
 		FEAD7A07270A6268000C4F0F /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD7A06270A6268000C4F0F /* TopicsViewController.swift */; };
+		FEBCA1B1275D623900B7E751 /* InformationDictionary2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCA1B0275D623900B7E751 /* InformationDictionary2.swift */; };
 		FEC0E48C270A784C00BDB2AE /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC0E48B270A784C00BDB2AE /* LessonViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		FEAD79FD270A6070000C4F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEAD79FF270A6070000C4F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEAD7A06270A6268000C4F0F /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
+		FEBCA1B0275D623900B7E751 /* InformationDictionary2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDictionary2.swift; sourceTree = "<group>"; };
 		FEC0E48B270A784C00BDB2AE /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				FE4ACC302720EDC5009953B7 /* InformationDictionary1.swift */,
+				FEBCA1B0275D623900B7E751 /* InformationDictionary2.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				FEAD79F3270A606F000C4F0F /* ViewController.swift in Sources */,
 				FE4EEF22275D1FD400B7DF2F /* ReviewWithImageVC.swift in Sources */,
 				FEAD79F9270A606F000C4F0F /* Discrete_Structures_Tutor.xcdatamodeld in Sources */,
+				FEBCA1B1275D623900B7E751 /* InformationDictionary2.swift in Sources */,
 				FEAD79EF270A606F000C4F0F /* AppDelegate.swift in Sources */,
 				FE4EEF1C275D1EC300B7DF2F /* LessonReviewVC.swift in Sources */,
 				FEAD7A07270A6268000C4F0F /* TopicsViewController.swift in Sources */,
