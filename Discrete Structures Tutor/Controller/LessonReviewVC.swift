@@ -9,6 +9,7 @@ class LessonReviewVC: UIViewController {
     @IBOutlet weak var textBox: UILabel!
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!    
+    @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,10 @@ class LessonReviewVC: UIViewController {
     
     @IBAction func close() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "reviewToChoice", sender: nil)
     }
     
     @IBAction func previousButtonPressed(_ sender: Any) {
