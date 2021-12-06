@@ -17,10 +17,6 @@ class LessonReviewVC: UIViewController {
         updateLabel(slideNumber: slideNumber)
     }
     
-    @IBAction func close() {
-        dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func backButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "reviewToChoice", sender: nil)
     }

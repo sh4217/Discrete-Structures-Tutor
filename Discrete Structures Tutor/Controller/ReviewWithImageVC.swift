@@ -10,6 +10,7 @@ class ReviewWithImageVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,4 +23,7 @@ class ReviewWithImageVC: UIViewController {
         imageView.image = infoDict.image[lessonNumber][slideNumber]
     }
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "reviewImageToChoice", sender: nil)
+    }
 }

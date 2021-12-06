@@ -526,17 +526,32 @@
                                     <action selector="studyButtonPressed:" destination="XV8-Xh-m7b" eventType="touchUpInside" id="fLl-p8-h4T"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2G-Om-8Fi">
+                                <rect key="frame" x="20" y="44" width="62" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="RUz-Y4-WXa"/>
+                                    <constraint firstAttribute="width" constant="62" id="hjV-sq-tsh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="dZz-hg-Xhx" eventType="touchUpInside" id="SN3-kn-OOm"/>
+                                    <action selector="backButtonPressed:" destination="GY1-es-orw" eventType="touchUpInside" id="qGz-9s-ZQ7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vRp-BG-B9g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="HJu-tX-S14" firstAttribute="centerX" secondItem="eEo-Cf-htF" secondAttribute="centerX" id="DUU-HY-S0s"/>
                             <constraint firstItem="moW-hE-2Lj" firstAttribute="top" secondItem="HJu-tX-S14" secondAttribute="bottom" constant="50" id="KVA-Ox-uE5"/>
+                            <constraint firstItem="U2G-Om-8Fi" firstAttribute="top" secondItem="vRp-BG-B9g" secondAttribute="top" id="MSq-Za-FGD"/>
                             <constraint firstItem="vRp-BG-B9g" firstAttribute="trailing" secondItem="kLf-hu-Qge" secondAttribute="trailing" constant="50" id="S1C-rI-ann"/>
                             <constraint firstItem="kLf-hu-Qge" firstAttribute="top" secondItem="vRp-BG-B9g" secondAttribute="top" constant="50" id="UTM-RW-ZAH"/>
                             <constraint firstItem="vRp-BG-B9g" firstAttribute="trailing" secondItem="VR7-D7-y11" secondAttribute="trailing" constant="100" id="WbD-lM-3xb"/>
                             <constraint firstItem="HJu-tX-S14" firstAttribute="top" secondItem="kLf-hu-Qge" secondAttribute="bottom" constant="70" id="cX7-Ll-S7P"/>
                             <constraint firstItem="VR7-D7-y11" firstAttribute="leading" secondItem="vRp-BG-B9g" secondAttribute="leading" constant="100" id="huQ-7w-MgD"/>
+                            <constraint firstItem="U2G-Om-8Fi" firstAttribute="leading" secondItem="vRp-BG-B9g" secondAttribute="leading" constant="20" id="iuN-Gk-Kqa"/>
                             <constraint firstItem="VR7-D7-y11" firstAttribute="top" secondItem="moW-hE-2Lj" secondAttribute="bottom" constant="50" id="lT0-sO-oIh"/>
                             <constraint firstItem="kLf-hu-Qge" firstAttribute="leading" secondItem="vRp-BG-B9g" secondAttribute="leading" constant="50" id="pc4-hH-EqF"/>
                             <constraint firstItem="vRp-BG-B9g" firstAttribute="trailing" secondItem="moW-hE-2Lj" secondAttribute="trailing" constant="100" id="xvL-d3-00g"/>
@@ -544,10 +559,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="U2G-Om-8Fi" id="eks-mT-aex"/>
                         <outlet property="imageView" destination="HJu-tX-S14" id="DXB-Wx-rrm"/>
                         <outlet property="nextButton" destination="VR7-D7-y11" id="tzh-WS-LQg"/>
                         <outlet property="previousButton" destination="moW-hE-2Lj" id="iB6-75-hqf"/>
                         <outlet property="textBox" destination="kLf-hu-Qge" id="ATh-aN-4Si"/>
+                        <segue destination="XV8-Xh-m7b" kind="presentation" identifier="reviewImageToChoice" animates="NO" modalPresentationStyle="fullScreen" id="tFy-F7-DDa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSe-7V-8sR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -619,7 +636,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="tr1-Rc-0fx"/>
         <segue reference="ien-iv-2YR"/>
-        <segue reference="dmA-gE-6cf"/>
+        <segue reference="tFy-F7-DDa"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
