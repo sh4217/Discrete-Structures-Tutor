@@ -11,7 +11,7 @@ class InformationDictionary2 {
     let image: [[UIImage?]] = [
         [
             nil,
-            nil,
+            UIImage(named: "inference1")
         ],
     ]
 }

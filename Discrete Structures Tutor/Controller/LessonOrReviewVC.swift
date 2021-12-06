@@ -6,14 +6,11 @@ class LessonOrReviewVC: UIViewController {
     
     @IBOutlet weak var studyButton: UIButton!
     @IBOutlet weak var practiceButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    }
-    
-    @IBAction func close() {
-        dismiss(animated: true, completion: nil)
     }
 
     @IBAction func studyButtonPressed(_ sender: Any) {
@@ -22,6 +19,10 @@ class LessonOrReviewVC: UIViewController {
     
     @IBAction func practiceButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "choiceToReview", sender: nil)
+    }
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "choiceToTopics", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
