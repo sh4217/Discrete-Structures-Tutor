@@ -22,7 +22,11 @@ class ReviewWithImageVC: UIViewController {
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "reviewImageToChoice", sender: nil)
+        if lessonNumber == 16 {
+            performSegue(withIdentifier: "reviewImageToMain", sender: nil)
+        } else {
+            performSegue(withIdentifier: "reviewImageToChoice", sender: nil)
+        }
     }
     
     @IBAction func previousButtonPressed(_ sender: Any) {
@@ -53,6 +57,13 @@ class ReviewWithImageVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let target = segue.destination as? LessonReviewVC {
             target.slideNumber = slideNumber
+            target.lessonNumber = lessonNumber
+        }
+        
+        if let target = segue.destination as? LessonOrReviewVC {
+            if lessonNumber > 7 {
+                lessonNumber -= 8
+            }
             target.lessonNumber = lessonNumber
         }
     }

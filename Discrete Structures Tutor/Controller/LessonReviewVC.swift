@@ -18,7 +18,11 @@ class LessonReviewVC: UIViewController {
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "reviewToChoice", sender: nil)
+        if lessonNumber == 16 {
+            performSegue(withIdentifier: "reviewToMain", sender: nil)
+        } else {
+            performSegue(withIdentifier: "reviewToChoice", sender: nil)
+        }
     }
     
     @IBAction func previousButtonPressed(_ sender: Any) {
@@ -54,5 +58,13 @@ class LessonReviewVC: UIViewController {
             target.slideNumber = slideNumber
             target.lessonNumber = lessonNumber
         }
+        
+        if let target = segue.destination as? LessonOrReviewVC {
+            if lessonNumber > 7 {
+                lessonNumber -= 8
+            }
+            target.lessonNumber = lessonNumber
+        }
+
     }
 }

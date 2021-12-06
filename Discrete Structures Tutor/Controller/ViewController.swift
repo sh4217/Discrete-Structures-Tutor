@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var lessonNumber = 0
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textBox: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -24,6 +26,15 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func practiceButtonPressed(_ sender: Any) {
+        lessonNumber = 16
+        performSegue(withIdentifier: "mainToReview", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let target = segue.destination as? LessonReviewVC {
+            target.lessonNumber = lessonNumber
+        }
+    }
 }
 
