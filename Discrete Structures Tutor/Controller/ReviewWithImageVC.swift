@@ -8,8 +8,6 @@ class ReviewWithImageVC: UIViewController {
     
     @IBOutlet weak var textBox: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var previousButton: UIButton!
-    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
@@ -27,6 +25,17 @@ class ReviewWithImageVC: UIViewController {
         performSegue(withIdentifier: "reviewImageToChoice", sender: nil)
     }
     
+    @IBAction func previousButtonPressed(_ sender: Any) {
+        if slideNumber != 0 {
+            slideNumber -= 1
+            if infoDict.image[lessonNumber][slideNumber] != nil {
+                updateLabel(slideNumber: slideNumber)
+            } else {
+                performSegue(withIdentifier: "reviewNoImage", sender: nil)
+            }
+        }
+    }
+    
     @IBAction func nextButtonPressed(_ sender: Any) {
         if slideNumber < infoDict.lecture[lessonNumber].count - 1 {
             slideNumber += 1
@@ -39,6 +48,7 @@ class ReviewWithImageVC: UIViewController {
             performSegue(withIdentifier: "reviewImageToChoice", sender: nil)
         }
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let target = segue.destination as? LessonReviewVC {
