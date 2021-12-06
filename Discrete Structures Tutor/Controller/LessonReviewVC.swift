@@ -45,7 +45,11 @@ class LessonReviewVC: UIViewController {
                 performSegue(withIdentifier: "reviewNeedsImage", sender: nil)
             }
         } else {
-            performSegue(withIdentifier: "reviewToChoice", sender: nil)
+            if lessonNumber == 16  {
+                performSegue(withIdentifier: "reviewToMain", sender: nil)
+            } else {
+                performSegue(withIdentifier: "reviewToChoice", sender: nil)
+            }
         }
     }
     
