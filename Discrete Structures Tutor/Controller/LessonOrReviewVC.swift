@@ -27,9 +27,6 @@ class LessonOrReviewVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let target = segue.destination as? LessonViewController {
-            target.lessonNumber = lessonNumber
-        }
         if let target = segue.destination as? LessonReviewVC {
             target.lessonNumber = lessonNumber
         }
