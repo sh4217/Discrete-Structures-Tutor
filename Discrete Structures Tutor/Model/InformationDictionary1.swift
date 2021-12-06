@@ -103,10 +103,10 @@ class InformationDictionary1 {
         [
             "A counting problem asks how many different ways an event can occur.\n\nExample: How many combinations of numbers can occur if you roll a die four times?",
             "The fundamental counting principle states if a procedure can be broken into different stages, you can find the number of combinations by multiplying the number of ways each step can occur together.\n\nIn the aforementioned example, each roll has four possible results, so the number of combinations equals 6 * 6 * 6 * 6 = 1296.",
-            "A permutation is an arrangement of items in a distinct order, aka with no repeating items.",
+            "A permutation is an arrangement of items in which order matters; e.g., XY is distinct from YX.",
             "To find the number of permutations of n items taken r at a time, use the following formula.",
             "Example: how many permutations of numbers can you make with three digits?\n\nn = 10, because there are ten different digits available to you.\n\nr = 3 because you are taking them three at a time.\n\n5!/(5-3)! = 60",
-            "A combination is a similar arrangement, except order doesn't matter, and items can repeat. \n\nFormula:",
+            "A combination is a similar arrangement, except order doesn't matter; e.g. XY is not distinct from XY, and only one can be used to find the total number of combinations. \n\nFormula:",
             "Example: how many different five-card hands can be dealt from a standard deck of fifty-two cards?\n\nn = 52, r = 5\n\nCombinations = 52!/(5!(52-5)!) = 2,598,960",
         ],
         
@@ -154,49 +154,65 @@ class InformationDictionary1 {
         ],
         
         [
-            "1",
-            "2",
+            "Which of the following statements are logically equivalent to the implication p -> q?\n\nInverse: ~p -> ~q\n\nConverse: q -> p\n\nContrapositive: ~q -> ~p",
+            "Only the contrapositive, ~q -> ~p, is logically equivalent to p -> q.",
+            "Write a statement that is a tautology and one that is a contradiction.",
+            "Example answers:\n\nTautology: I am alive or dead.\n\nContradiction: I am alive and dead.",
         ],
         
         [
-            "1",
-            "2",
-        ],
-        
-        
-        [
-            "1",
-            "2",
-        ],
-        
-        
-        [
-            "1",
-            "2",
+            "What is the truth value of the predicate P(x): 5x - 5 > 0?",
+            "Trick question: there is no truth value to the generic predicate. Giving certain values of x, such as x = -1, would result in a truth value of true, while other values, such as 2, would result in a truth value of false.",
+            "Let P(x) represent the sentence \"I have clothes that are green\" and Q(x) represent the sentence \"I have clothes that are red\".\n\nRewrite the statement \"I have at least one piece of clothing that is green and red\" using predicate notation",
+            "∃x(P(x) ∧ Q(x))\n\n(Of all x, there exists at least one x that satisfies the predicate Q and the predicate P.)"
         ],
         
         
         [
-            "1",
-            "2",
+            "Give an example of Modus Ponens.",
+            "Example answer:\n\nAll men are mortal.\nSocrates is a man.\nTherefore, Socrates is mortal.",
+            "Give an example of disjunctive syllogism.",
+            "Example answer:\n\nAll Master's students must due a master's project or do a master's thesis.\nLynn, a master's student, did not do a master's project.\nTherefore, Lynn did a master's thesis.",
         ],
         
         
         [
-            "1",
-            "2",
+            "An indirect proof is really just a direct proof of an implication's _____",
+            "contrapositive",
+            "True or false: an example can be used to confirm a positive assertion, but it cannot be used to negate one.",
+            "False. It's the other way around: a counterexample can be used to disprove a universal assertion, but it cannot prove one.",
         ],
         
         
         [
-            "1",
-            "2",
+            "How many different outcomes are possible from flipping a coin twenty times?",
+            "2^20",
+            "What is the difference between a permutation and a combination?",
+            "A permutation is a way of ordering items in which order matters to the overall count. The same elements in a different order are distinct items in the permutation.\n\nA combination is a way of ordering them in which order does not matter. The same elements in a different order are not distinct items in a combination.",
         ],
         
         
         [
-            "1",
-            "2",
+            "A = {1, 3, 5, 7, 9}\n\nB = {1, 5, 6, 10, 11}\n\nTrue or false: A U B = {1, 1, 3, 5, 5, 6, 7, 9, 10, 11}",
+            "False. The union of two sets only counts distinct elements. A U B = {1, 3, 5, 6, 7, 9, 10, 11}",
+            "Write the power set of the following set:\n\nA = {red, blue, green}",
+            "P(A) = {{∅), {red}, {blue}, {green}, {red, blue}, {red, green}, {blue, green}, {red, blue, green}}",
+        ],
+        
+        
+        [
+            "What is the difference between a sequence and a series?",
+            "A sequence is just a list of numbers, often but not necessarily following a pattern.\n\nA series is a sequence of numbers being added to each other in which a defined rule is used to get the next number in the series.",
+            "What is the difference between an arithmetic and a geometric series?",
+            "The next item in an arithmetic series is found by adding a specific number, called the common difference, to the current number.\n\nThe next item in a geometric series is found by multiplying by a specific number, called the common ratio, to the current number.",
+        ],
+        
+        
+        [
+            "The domain is the set of all possible values for the _____ variable, and the range is the set of all possible values for the ______ variable.",
+            "independent, dependent",
+            "A function can only be inversed if it is ____, which means that it is both _____ and _____.",
+            "bijective, one-to-one, onto",
         ],
         
         
@@ -363,47 +379,65 @@ class InformationDictionary1 {
         
         [
             nil,
-            UIImage(named: "inference1"),
+            nil,
+            nil,
+            nil,
+        ],
+        
+        [
+            nil,
+            nil,
+            nil,
+            nil,
         ],
         
         [
             nil,
             UIImage(named: "inference1"),
+            nil,
+            UIImage(named: "disjunctive-syllogism"),
         ],
         
         [
             nil,
-            UIImage(named: "inference1"),
+            nil,
+            nil,
+            nil,
         ],
         
         [
             nil,
-            UIImage(named: "inference1"),
+            nil,
+            nil,
+            nil,
         ],
         
         [
             nil,
-            UIImage(named: "inference1"),
+            nil,
+            nil,
+            nil,
         ],
         
         [
             nil,
-            UIImage(named: "inference1"),
+            nil,
+            nil,
+            nil,
         ],
         
         [
             nil,
-            UIImage(named: "inference1"),
+            nil,
+            nil,
+            nil,
         ],
         
         [
             nil,
-            UIImage(named: "inference1"),
-        ],
-        
-        [
             nil,
-            UIImage(named: "inference1"),
+            nil,
+            nil,
         ],
         
     ]
