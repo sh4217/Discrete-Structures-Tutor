@@ -2,7 +2,7 @@ import UIKit
 
 class LessonReviewVC: UIViewController {
 
-    let infoDict = InformationDictionary2()
+    let infoDict = InformationDictionary1()
     var slideNumber = 0
     var lessonNumber = 0
     
@@ -51,5 +51,12 @@ class LessonReviewVC: UIViewController {
     
     func updateLabel(slideNumber: Int) {
         textBox.text = infoDict.lecture[lessonNumber][slideNumber]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let target = segue.destination as? ReviewWithImageVC {
+            target.slideNumber = slideNumber
+            target.lessonNumber = lessonNumber
+        }
     }
 }

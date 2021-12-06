@@ -543,6 +543,12 @@
                             <constraint firstItem="moW-hE-2Lj" firstAttribute="leading" secondItem="vRp-BG-B9g" secondAttribute="leading" constant="100" id="zQQ-f7-duI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="HJu-tX-S14" id="DXB-Wx-rrm"/>
+                        <outlet property="nextButton" destination="VR7-D7-y11" id="tzh-WS-LQg"/>
+                        <outlet property="previousButton" destination="moW-hE-2Lj" id="iB6-75-hqf"/>
+                        <outlet property="textBox" destination="kLf-hu-Qge" id="ATh-aN-4Si"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSe-7V-8sR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

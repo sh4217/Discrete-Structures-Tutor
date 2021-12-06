@@ -18,6 +18,7 @@ class LessonOrReviewVC: UIViewController {
     }
     
     @IBAction func practiceButtonPressed(_ sender: Any) {
+        lessonNumber += 8
         performSegue(withIdentifier: "choiceToReview", sender: nil)
     }
     

@@ -152,6 +152,11 @@ class InformationDictionary1 {
             "To find the inverse of a bijective function, swap the x and the f(x) and solve for f(x).",
             "A composite function entails using the output of one function as the input for another.\n\nf(x) = 3x + 5\n\ng(x) = 2x\n\nf(g(3)) = 3(2(3)) + 5",
         ],
+        
+        [
+            "1",
+            "2",
+        ]
     
     ]
     
@@ -306,6 +311,11 @@ class InformationDictionary1 {
             nil,
             nil,
             nil,
+        ],
+        
+        [
+            nil,
+            UIImage(named: "inference1"),
         ],
     ]
 }
