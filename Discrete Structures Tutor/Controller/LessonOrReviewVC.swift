@@ -14,7 +14,7 @@ class LessonOrReviewVC: UIViewController {
     }
 
     @IBAction func studyButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "choiceToLesson", sender: nil)
+        performSegue(withIdentifier: "choiceToReview", sender: nil)
     }
     
     @IBAction func practiceButtonPressed(_ sender: Any) {

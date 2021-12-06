@@ -26,4 +26,25 @@ class ReviewWithImageVC: UIViewController {
     @IBAction func backButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "reviewImageToChoice", sender: nil)
     }
+    
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        if slideNumber < infoDict.lecture[lessonNumber].count - 1 {
+            slideNumber += 1
+            if infoDict.image[lessonNumber][slideNumber] != nil {
+                updateLabel(slideNumber: slideNumber)
+            } else {
+                performSegue(withIdentifier: "reviewNoImage", sender: nil)
+            }
+        } else {
+            performSegue(withIdentifier: "reviewImageToChoice", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let target = segue.destination as? LessonReviewVC {
+            target.slideNumber = slideNumber
+            target.lessonNumber = lessonNumber
+        }
+    }
+    
 }

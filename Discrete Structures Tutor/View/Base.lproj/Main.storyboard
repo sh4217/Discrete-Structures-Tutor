@@ -523,6 +523,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="dZz-hg-Xhx" eventType="touchUpInside" id="V2q-af-Rw6"/>
+                                    <action selector="nextButtonPressed:" destination="GY1-es-orw" eventType="touchUpInside" id="tKk-4K-DSJ"/>
                                     <action selector="studyButtonPressed:" destination="XV8-Xh-m7b" eventType="touchUpInside" id="fLl-p8-h4T"/>
                                 </connections>
                             </button>
@@ -565,6 +566,7 @@
                         <outlet property="previousButton" destination="moW-hE-2Lj" id="iB6-75-hqf"/>
                         <outlet property="textBox" destination="kLf-hu-Qge" id="ATh-aN-4Si"/>
                         <segue destination="XV8-Xh-m7b" kind="presentation" identifier="reviewImageToChoice" animates="NO" modalPresentationStyle="fullScreen" id="tFy-F7-DDa"/>
+                        <segue destination="dZz-hg-Xhx" kind="presentation" identifier="reviewNoImage" animates="NO" modalPresentationStyle="fullScreen" id="sHm-t2-JSj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSe-7V-8sR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -634,6 +636,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="sHm-t2-JSj"/>
         <segue reference="tr1-Rc-0fx"/>
         <segue reference="ien-iv-2YR"/>
         <segue reference="tFy-F7-DDa"/>
